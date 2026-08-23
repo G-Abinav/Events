@@ -8,9 +8,9 @@
   <meta name="apple-mobile-web-app-title" content="Events '26" />
   <meta name="theme-color" content="#ffffff" />
   
-  <link rel="manifest" href="manifest.json" />
-  <link rel="icon" type="image/svg+xml" href="icon.svg" />
-  <link rel="apple-touch-icon" href="icon.svg" />
+  <link rel="manifest" href="/Events/manifest.json" />
+  <link rel="icon" type="image/png" href="/Events/icon-192.png" />
+  <link rel="apple-touch-icon" href="/Events/icon-192.png" />
 
   <title>Events '26</title>
   
@@ -57,7 +57,7 @@
       border: 1px solid var(--border);
       display: flex;
       flex-direction: column;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
       overflow: hidden;
     }
 
@@ -478,7 +478,10 @@
   <script>
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
-        navigator.serviceWorker.register("./sw.js").catch(() => {});
+        navigator.serviceWorker
+          .register("/Events/sw.js", { scope: "/Events/" })
+          .then((reg) => console.log("SW Registered with scope:", reg.scope))
+          .catch((err) => console.error("SW Registration failed:", err));
       });
     }
 
