@@ -1,10 +1,10 @@
-const CACHE_NAME = "events-26-v3";
+const CACHE_NAME = "events-26-v4";
 const ASSETS_TO_CACHE = [
-  "/Events/",
-  "/Events/index.html",
-  "/Events/manifest.json",
-  "/Events/icon-192.png",
-  "/Events/icon-512.png"
+  "/",
+  "/index.html",
+  "/manifest.json",
+  "/icon-192.png",
+  "/icon-512.png"
 ];
 
 self.addEventListener("install", (event) => {

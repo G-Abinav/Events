@@ -8,9 +8,9 @@
   <meta name="apple-mobile-web-app-title" content="Events '26" />
   <meta name="theme-color" content="#ffffff" />
   
-  <link rel="manifest" href="/Events/manifest.json" />
-  <link rel="icon" type="image/png" href="/Events/icon-192.png" />
-  <link rel="apple-touch-icon" href="/Events/icon-192.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="icon-192.png" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
 
   <title>Events '26</title>
   
@@ -477,13 +477,13 @@
 
   <script>
     if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => {
-        navigator.serviceWorker
-          .register("/Events/sw.js", { scope: "/Events/" })
-          .then((reg) => console.log("SW Registered with scope:", reg.scope))
-          .catch((err) => console.error("SW Registration failed:", err));
-      });
-    }
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+        .register("/sw.js")
+        .then((reg) => console.log("SW Registered with scope:", reg.scope))
+        .catch((err) => console.error("SW Registration failed:", err));
+    });
+  }
 
     const MIN_YEAR = 2026;
     const MAX_YEAR = 2027;
