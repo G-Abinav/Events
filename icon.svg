@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="115" fill="#0f172a"/>
+  <!-- Calendar Body -->
+  <rect x="96" y="128" width="320" height="288" rx="28" fill="#ffffff"/>
+  <!-- Header Bar -->
+  <path d="M96 156 C96 140.536 108.536 128 124 128 L388 128 C403.464 128 416 140.536 416 156 L416 200 L96 200 Z" fill="#2563eb"/>
+  <!-- Binder Rings -->
+  <rect x="156" y="96" width="28" height="60" rx="14" fill="#f8fafc"/>
+  <rect x="328" y="96" width="28" height="60" rx="14" fill="#f8fafc"/>
+  <!-- Grid Dots / Event marks -->
+  <circle cx="168" cy="260" r="14" fill="#94a3b8"/>
+  <circle cx="256" cy="260" r="14" fill="#94a3b8"/>
+  <circle cx="344" cy="260" r="14" fill="#2563eb"/>
+  <circle cx="168" cy="330" r="14" fill="#94a3b8"/>
+  <circle cx="256" cy="330" r="14" fill="#94a3b8"/>
+  <circle cx="344" cy="330" r="14" fill="#94a3b8"/>
+</svg>
